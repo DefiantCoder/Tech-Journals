@@ -1,1 +1,28 @@
+#9/3/21 ipconfig, ping, tracert, nslookup
+To find the command prompt you can search it in the bottom search bar or windows key + x
 
+ipconfig = provides the computer's DNS Suffix, IPV6, IPv4, Subnet Mask & Default Gateway
+  by simply typing ipconfig you can access this information
+  
+ping = allows you to send a hello and see what is connected
+  by typing ping plus an IP address you can ping it and see if it is connected
+
+tracert = allows us to see the number of hops (ip and sometimes description) between the computer and the searched site and the time taken
+  Enter tracert + url in question
+nslookup = allows us to discover the number of IP address owned by that name and its true name
+  enter nslookup, press enter then enter the site in question
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
