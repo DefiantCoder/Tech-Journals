@@ -3,6 +3,7 @@
 
 # Script to perform local security checks
 
+
 function checks() {
 	if [[ $2 != $3 ]]
 	then
@@ -33,6 +34,9 @@ checks "Password Warn Age" "7" "${pwarn}"
 # Check the SSH UsePam configuration
 chkSSHPAM=$(egrep -i "^UsePAM" /etc/ssh/sshd_config | awk ' { print $2 } ')
 checks "SSH UsePAM" "yes" "${chkSSHPAM}"
+
+
+# Assignment checkers
 
 # Check to that IP forwarding is disabled
 ipfrd=$(egrep -i "net\.ipv4\.ip_forward" /etc/sysctl.conf  | cut -d '=' -f 2 )
