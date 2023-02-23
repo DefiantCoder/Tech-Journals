@@ -2,17 +2,18 @@
 
 # Storyline: Use EmergingThreats.net to make firewall rules
 
-# Get arguments
+# Options for running script, add them when running to get desired outcome
 
 helptext="Menu Options:
 -i : Iptables
 -c : Cisco
 -w : Windows
 -m : Mac
--u : Cisco URL
--h : help"
+-u : Parse URL
+-h : Help
+"
 
-while getopts 'menu' OPTION ; do
+while getopts 'Menu' OPTION ; do
 
     case $OPTION in
 
@@ -38,6 +39,8 @@ while getopts 'menu' OPTION ; do
     esac
 
 done
+
+
 
 if [[ -z "${iptables}${cisco}${windwos}${mac}${url}" ]]
 then
@@ -78,12 +81,31 @@ if [[ -n ${iptables} ]]; then
     done
 fi
 
+#####################################################
+
+
+
+
 if [[ -n ${cisco} ]]; then
     for eachIP in $(cat badIPs.txt)
     do
         echo echo "deny ip host ${eachIP} any" | >> badips.cisco # copied from JQExample
     done
 fi
+
+#######################################################
+
+
+
+
+if [[ -n ${windows} ]]; then
+    for eachIP in $(cat badIPs.txt)
+    do
+        echo "netsh advfirewall firewall add rule name=\"BLOCK IP ADDRESS - ${eachIP}\" dir=in action=block remoteip=${eachIP}" | >> badips.netsh # copied from JQExample
+    done
+fi
+#######################################################
+
 
 
 if [[ -n ${mac} ]]; then
@@ -104,23 +126,21 @@ if [[ -n ${mac} ]]; then
 fi
 
 
-if [[ -n ${windows} ]]; then
-    for eachIP in $(cat badIPs.txt)
-    do
-        echo "netsh advfirewall firewall add rule name=\"BLOCK IP ADDRESS - ${eachIP}\" dir=in action=block remoteip=${eachIP}" | >> badips.netsh # copied from JQExample
-    done
-fi
+#######################################################
 
+
+
+
+# #3 parse this file
 if [[ -n ${url} ]]; then
     if [[ -f 'tmp/targetedthreats.csv' ]]
     then
-
-        # Prompt if we need to redownload the file
+        # Prompt  to redownload the file
         echo 'The URL rules file already exists.'
         echo -n 'Do you want to redownload it? (y/N) '
         read to_redownload
 
-        if [[ "${to_redownload}" == 'y' || "${to_redownload}" == 'Y' ]]
+        if [[ "${to_redownload}" == 'Y' || "${to_redownload}" == 'y' ]]
         then
             wget 'https://raw.githubusercontent.com/botherder/targetedthreats/master/targetedthreats.csv' -O tmp/targetedthreats.csv
         fi
@@ -128,10 +148,8 @@ if [[ -n ${url} ]]; then
         mkdir tmp
         wget 'https://raw.githubusercontent.com/botherder/targetedthreats/master/targetedthreats.csv' -O tmp/targetedthreats.csv
     fi
-    # grep '"domain"' tmp/targetedthreats.csv | awk -F , '{print $2}'
 
     echo 'class-map match-any BAD_URLS' | > badURLs.cisco
-
 
     for eachIP in $(grep '"domain"' tmp/targetedthreats.csv | awk -F , '{print $2}')
     do
@@ -139,9 +157,3 @@ if [[ -n ${url} ]]; then
     done
 
 fi
-
-#function menu2() {
-#	wget https://raw.githubusercontent.com/botherder/targetedthreats/master/targetedthreats.csv -O /tmp/blocks.csv 
-#
-#	tempIP=$(grep  AllowedIPs wg0.conf | sort -u | tail -1 | cut -d\. -f4 | cut -d\>
-#	ip=$(expr ${tempIP} + 1)
