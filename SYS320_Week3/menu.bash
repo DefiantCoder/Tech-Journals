@@ -145,6 +145,58 @@ function vpn_menu() {
 
 vpn_menu
 }
+security_menu () {
+
+   clear
+
+    echo "[B]lock list creation"
+    echo "[E]xit"
+    read -p "Please enter a choice above: " choice
+
+    case "$choice" in
+
+        B|b) blocklist_menu
+        ;;
+        E|e) exit 0
+        ;;
+        *) invalid_opt
+        ;;
+
+    esac
+security_menu
+}
+
+blocklist_menu () {
+
+   clear
+
+    echo "[C]isco blocklist generator"
+    echo "Cisco [U]RL blocklist generator"
+    echo "[W]indows blocklist generator"
+    echo "[M]ac blocklist generator"
+    echo "[I]Ptables blocklist generator"
+    read -p "Please enter a choice above: " choice
+
+    case "$choice" in
+
+        C|c) ./parse-threat -c
+        ;;
+        U|u) ./parse-threat -u
+        ;;
+        W|w) ./parse-threat -w
+        ;;
+        M|m) ./parse-threat -m
+        ;;
+        I|i) ./parse-threat -i
+        ;;
+        E|e) exit 0
+        ;;
+        *) invalid_opt
+        ;;
+
+    esac
+blocklist_menu
+}
 
 #Call the main function
 menu
