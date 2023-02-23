@@ -13,7 +13,7 @@ helptext="Menu Options:
 -h : Help
 "
 
-while getopts 'Menu' OPTION ; do
+while getopts 'icwmuh' OPTION ; do
 
     case $OPTION in
 
