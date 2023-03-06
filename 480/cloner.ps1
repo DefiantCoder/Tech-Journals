@@ -41,8 +41,7 @@ $newvm = New-VM -Name $newVMName -VM $linkedvm -VMHost $vmhost -Datastore $ds
 # Creates a Snapshot of the New VM
 $newvm | New-Snapshot -Name "Base"
 # Removes the Old Linked Clone
-$linkedvm | Remove-VM -DeletePermanently -Force
-
+$linkedvm | Remove-VM
 
 
 
