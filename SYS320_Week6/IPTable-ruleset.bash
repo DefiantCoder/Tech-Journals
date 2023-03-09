@@ -10,13 +10,13 @@ fi
 
 # grabs  the IP addresses from the log file
 while read p; do 
-    echo "${p}" | awk '{print $1}' >> IPs.txt
+    echo "${p}" | awk '{print $1}' >> IPruleset.txt
 done < "$tFile"
 
 
 
-sort IPs.txt > IP_2.txt #sort IPs.txt
-awk '!x[$0]++' IP_2.txt > IPs.txt #remove duplicates IPs.txt
+sort IPruleset.txt > IPruleset_2.txt #sort IPs
+awk '!x[$0]++' IPruleset_2.txt > IPruleset.txt #remove duplicates IPs
 
 # Creates the ruleset for iptables using ip addresses
 while read p; do 
