@@ -1,0 +1,141 @@
+Name	Status	DisplayName
+Alienware Digital Delivery Services	Running	Alienware Digital Delivery Services
+Alienware SupportAssist Remediation	Running	Alienware SupportAssist Remediation
+Appinfo	Running	Application Information
+AudioEndpointBuilder	Running	Windows Audio Endpoint Builder
+Audiosrv	Running	Windows Audio
+AWCCService	Running	AWCCService
+BFE	Running	Base Filtering Engine
+BITS	Running	Background Intelligent Transfer Service
+BrokerInfrastructure	Running	Background Tasks Infrastructure Service
+BthAvctpSvc	Running	AVCTP service
+camsvc	Running	Capability Access Manager Service
+CaptureService_52435	Running	CaptureService_52435
+cbdhsvc_52435	Running	cbdhsvc_52435
+CDPSvc	Running	Connected Devices Platform Service
+CDPUserSvc_52435	Running	CDPUserSvc_52435
+ClickToRunSvc	Running	Microsoft Office Click-to-Run Service
+CoreMessagingRegistrar	Running	CoreMessaging
+cphs	Running	Intel(R) Content Protection HECI Service
+cplspcon	Running	Intel(R) Content Protection HDCP Service
+CryptSvc	Running	Cryptographic Services
+DcomLaunch	Running	DCOM Server Process Launcher
+DDVCollectorSvcApi	Running	Dell Data Vault Service API
+DDVDataCollector	Running	Dell Data Vault Collector
+DDVRulesProcessor	Running	Dell Data Vault Processor
+DellClientManagementService	Running	Alienware Client Management Service
+DellTechHub	Running	Dell TechHub
+DeviceAssociationService	Running	Device Association Service
+DevicePickerUserSvc_52435	Running	DevicePickerUserSvc_52435
+DevicesFlowUserSvc_52435	Running	DevicesFlowUserSvc_52435
+Dhcp	Running	DHCP Client
+DiagTrack	Running	Connected User Experiences and Telemetry
+DispBrokerDesktopSvc	Running	Display Policy Service
+DisplayEnhancementService	Running	Display Enhancement Service
+Dnscache	Running	DNS Client
+DoSvc	Running	Delivery Optimization
+DPS	Running	Diagnostic Policy Service
+DsSvc	Running	Data Sharing Service
+DusmSvc	Running	Data Usage
+Eaphost	Running	Extensible Authentication Protocol
+ekrn	Running	ESET Service
+ekrnEpfw	Running	ESET Firewall Helper
+esifsvc	Running	Intel(R) Dynamic Platform and Thermal Framework service
+EventLog	Running	Windows Event Log
+EventSystem	Running	COM+ Event System
+FontCache	Running	Windows Font Cache Service
+FontCache3.0.0.0	Running	Windows Presentation Foundation Font Cache 3.0.0.0
+hidserv	Running	Human Interface Device Service
+igccservice	Running	Intel(R) Graphics Command Center Service
+igfxCUIService2.0.0.0	Running	Intel(R) HD Graphics Control Panel Service
+IKEEXT	Running	IKE and AuthIP IPsec Keying Modules
+InstallService	Running	Microsoft Store Install Service
+iphlpsvc	Running	IP Helper
+jhi_service	Running	Intel(R) Dynamic Application Loader Host Interface Service
+KAPSService	Running	Killer Smart AP Selection Service
+KeyIso	Running	CNG Key Isolation
+Killer Analytics Service	Running	Killer Analytics Service
+Killer Network Service	Running	Killer Network Service
+KNDBWM	Running	Killer Dynamic Bandwidth Management
+LanmanServer	Running	Server
+LanmanWorkstation	Running	Workstation
+lfsvc	Running	Geolocation Service
+LGHUBUpdaterService	Running	LGHUB Updater Service
+LicenseManager	Running	Windows License Manager Service
+lmhosts	Running	TCP/IP NetBIOS Helper
+LMS	Running	Intel(R) Management and Security Application Local Management Service
+LSM	Running	Local Session Manager
+mpssvc	Running	Windows Defender Firewall
+NahimicService	Running	Nahimic service
+NcbService	Running	Network Connection Broker
+Netman	Running	Network Connections
+netprofm	Running	Network List Service
+NlaSvc	Running	Network Location Awareness
+nsi	Running	Network Store Interface Service
+NvContainerLocalSystem	Running	NVIDIA LocalSystem Container
+NVDisplay.ContainerLocalSystem	Running	NVIDIA Display Container LS
+OneSyncSvc_52435	Running	OneSyncSvc_52435
+Origin Web Helper Service	Running	Origin Web Helper Service
+PcaSvc	Running	Program Compatibility Assistant Service
+PhoneSvc	Running	Phone Service
+PimIndexMaintenanceSvc_52435	Running	PimIndexMaintenanceSvc_52435
+PlugPlay	Running	Plug and Play
+PolicyAgent	Running	IPsec Policy Agent
+Power	Running	Power
+ProfSvc	Running	User Profile Service
+QWAVE	Running	Quality Windows Audio Video Experience
+RasMan	Running	Remote Access Connection Manager
+RmSvc	Running	Radio Management Service
+RpcEptMapper	Running	RPC Endpoint Mapper
+RpcSs	Running	Remote Procedure Call (RPC)
+RstMwService	Running	Intel(R) Storage Middleware Service
+RtkAudioUniversalService	Running	Realtek Audio Universal Service
+SamSs	Running	Security Accounts Manager
+Schedule	Running	Task Scheduler
+SecurityHealthService	Running	Windows Security Service
+SENS	Running	System Event Notification Service
+SgrmBroker	Running	System Guard Runtime Monitor Broker
+ShellHWDetection	Running	Shell Hardware Detection
+Spooler	Running	Print Spooler
+SSDPSRV	Running	SSDP Discovery
+SstpSvc	Running	Secure Socket Tunneling Protocol Service
+StateRepository	Running	State Repository Service
+Steam Client Service	Running	Steam Client Service
+stisvc	Running	Windows Image Acquisition (WIA)
+StorSvc	Running	Storage Service
+SupportAssistAgent	Running	Dell SupportAssist
+SysMain	Running	SysMain
+SystemEventsBroker	Running	System Events Broker
+TabletInputService	Running	Touch Keyboard and Handwriting Panel Service
+TapiSrv	Running	Telephony
+TbtHostControllerService	Running	Thunderbolt(TM) Application Launcher
+TbtP2pShortcutService	Running	Thunderbolt(TM) Peer to Peer Shortcut
+Themes	Running	Themes
+TimeBrokerSvc	Running	Time Broker
+Tobii Service	Running	Tobii Service
+TokenBroker	Running	Web Account Manager
+UnistoreSvc_52435	Running	UnistoreSvc_52435
+UserDataSvc_52435	Running	UserDataSvc_52435
+UserManager	Running	User Manager
+UsoSvc	Running	Update Orchestrator Service
+VaultSvc	Running	Credential Manager
+VMAuthdService	Running	VMware Authorization Service
+VMnetDHCP	Running	VMware DHCP Service
+VMUSBArbService	Running	VMware USB Arbitration Service
+VMware NAT Service	Running	VMware NAT Service
+VMwareHostd	Running	VMware Workstation Server
+WaaSMedicSvc	Running	Windows Update Medic Service
+Wallpaper Engine Service	Running	Wallpaper Engine Service
+WbioSrvc	Running	Windows Biometric Service
+Wcmsvc	Running	Windows Connection Manager
+WdiServiceHost	Running	Diagnostic Service Host
+WinHttpAutoProxySvc	Running	WinHTTP Web Proxy Auto-Discovery Service
+Winmgmt	Running	Windows Management Instrumentation
+WlanSvc	Running	WLAN AutoConfig
+WMIRegistrationService	Running	Intel(R) Management Engine WMI Provider Registration
+WpcMonSvc	Running	Parental Controls
+WpnService	Running	Windows Push Notifications System Service
+WpnUserService_52435	Running	WpnUserService_52435
+wscsvc	Running	Security Center
+WSearch	Running	Windows Search
+XTU3SERVICE	Running	XTUOCDriverService
