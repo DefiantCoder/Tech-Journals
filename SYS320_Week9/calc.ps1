@@ -2,6 +2,6 @@
 # Start the calculator (Process name cannot be used until the process is running.)
 Start-Process calc.exe
 # Wait 5 seconds
-Start-Sleep -Seconds 3
+Start-Sleep -Seconds 4
 # Stop the calculator using the process name
 Stop-Process -Name CalculatorApp
