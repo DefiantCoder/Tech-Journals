@@ -3,4 +3,4 @@
 # BONUS: Get the DHCP server.
 
 
-Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE | Format-List IPAddress, DefaultIPGateway,DHCPServer, DNSServerSearchOrder
+Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=TRUE | Format-List IPAddress, DefaultIPGateway, DNSServerSearchOrder, DHCPServer
