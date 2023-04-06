@@ -2,7 +2,6 @@
 # Partial credit to Chat GPT for code
 
 function get_services() { 
-
     cls
 
     # grab running services & create an array
