@@ -49,7 +49,7 @@ function irToolkit() {
     Export-csv -Path $filePath"\runningProcess.csv" -NoTypeInformation
 
      # Creating FileHash for each file in folder
-    Get-FileHash $filePath\*.csv | Export-Csv -Path $home\Desktop\zhash.csv -NoTypeInformation 
+    Get-FileHash $filePath\*.csv | Export-Csv -Path $home\Desktop\hash.csv -NoTypeInformation 
 
 }
 
