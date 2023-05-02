@@ -53,6 +53,6 @@ function irToolkit() {
 
 }
 
-IRScript
+irToolkit
 
-Compress-Archive -Path $filePath -DestinationPath $filePath\IRScript.zip -Force
+Compress-Archive -Path $filePath -DestinationPath $filePath\irToolkit.zip -Force
